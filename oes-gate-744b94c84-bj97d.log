@@ -1,0 +1,1240 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/opsmx/workdir/gate/lib/groovy-2.5.15.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.4.13)
+
+2024-03-20 13:18:55.310  INFO 7 --- [           main] com.netflix.spinnaker.gate.Main          : Starting Main v1.0.0 using Java 11.0.21 on oes-gate-744b94c84-bj97d with PID 7 (/opsmx/workdir/gate/lib/gate-web.jar started by opsmx in /opsmx/workdir)
+2024-03-20 13:18:55.311  INFO 7 --- [           main] com.netflix.spinnaker.gate.Main          : The following profiles are active: composite,vault,local
+2024-03-20 13:18:55.350  WARN 7 --- [           main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [gate.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [gate.yml] - 166:13]
+2024-03-20 13:18:55.350  WARN 7 --- [           main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [gate.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [gate.yml] - 143:13]
+2024-03-20 13:18:55.350  WARN 7 --- [           main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [gate.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [gate.yml] - 121:13]
+2024-03-20 13:18:56.545  INFO 7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-20 13:18:56.547  INFO 7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-20 13:18:56.571  INFO 7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-03-20 13:18:56.710  INFO 7 --- [           main] org.pf4j.DefaultPluginManager            : PF4J version 3.2.0 in 'deployment' mode
+2024-03-20 13:18:56.780  INFO 7 --- [           main] c.n.s.config.PluginsAutoConfiguration    : Enabling spinnaker-official and spinnaker-community plugin repositories
+2024-03-20 13:18:56.809  WARN 7 --- [           main] org.pf4j.AbstractPluginManager           : No 'plugins' root
+2024-03-20 13:18:57.161  INFO 7 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'main' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-03-20 13:18:57.162  INFO 7 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'com.netflix.spinnaker.kork.PlatformComponents' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2024-03-20 13:18:57.320  INFO 7 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=683bf296-b6b8-32b8-b106-eedcfb95902a
+2024-03-20 13:18:57.397  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.398  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.399  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.419  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.420  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.422  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.424  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.424  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.429  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.429  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.431  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.432  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.440  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.441  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.netflix.spinnaker.kork.secrets.SecretConfiguration' of type [com.netflix.spinnaker.kork.secrets.SecretConfiguration$$EnhancerBySpringCGLIB$$b3af276a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.448  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'userSecretSerdeFactory' of type [com.netflix.spinnaker.kork.secrets.user.UserSecretSerdeFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.449  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerConfiguration' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerConfiguration$$EnhancerBySpringCGLIB$$c0a0e013] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.450  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerClientProvider' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerConfiguration$$Lambda$557/0x000000084071c840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.451  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.SecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.454  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 's3SecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.S3SecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.456  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'gcsSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GcsSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.461  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'googleSecretsManagerSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.GoogleSecretsManagerSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.462  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'noopSecretEngine' of type [com.netflix.spinnaker.kork.secrets.engines.NoopSecretEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.462  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretEngineRegistry' of type [com.netflix.spinnaker.kork.secrets.SecretEngineRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.462  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'secretManager' of type [com.netflix.spinnaker.kork.secrets.SecretManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.624  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@76ac3ad0' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.632  INFO 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-20 13:18:57.927  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2024-03-20 13:18:57.935  INFO 7 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-20 13:18:57.935  INFO 7 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-03-20 13:18:58.042  INFO 7 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-20 13:18:58.043  INFO 7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2611 ms
+2024-03-20 13:18:59.496  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/login/**'] with [org.springframework.security.extensions.saml2.config.SAMLDslEntryPoint@38321e6f]
+2024-03-20 13:18:59.497  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/logout/**'] with [org.springframework.security.saml.SAMLLogoutFilter@52f3859a]
+2024-03-20 13:18:59.497  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/metadata/**'] with [org.springframework.security.saml.metadata.MetadataDisplayFilter@fff7dc9]
+2024-03-20 13:18:59.499  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/SSO/**'] with [org.springframework.security.saml.SAMLProcessingFilter@426786ee]
+2024-03-20 13:18:59.499  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/SingleLogout/**'] with [org.springframework.security.saml.SAMLLogoutProcessingFilter@4d97c12c]
+2024-03-20 13:18:59.499  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/saml/discovery/**'] with [org.springframework.security.saml.SAMLDiscovery@6f49a165]
+2024-03-20 13:18:59.527 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for any request
+2024-03-20 13:18:59.534  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/managed/delivery-configs/schema'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d2cd74, org.springframework.security.web.context.SecurityContextPersistenceFilter@3baed0a9, org.springframework.security.web.header.HeaderWriterFilter@3ce7a0d1, org.springframework.security.web.csrf.CsrfFilter@e786d7e, org.springframework.security.web.authentication.logout.LogoutFilter@198ad9e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aa345a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7babfd29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@157f284b, org.springframework.security.web.session.SessionManagementFilter@74d41fcf, org.springframework.security.web.access.ExceptionTranslationFilter@4ffa1019, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@241b5364]
+2024-03-20 13:18:59.537 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for any request
+2024-03-20 13:18:59.538  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest$EndpointRequestMatcher@ebad9a with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fa27158, org.springframework.security.web.context.SecurityContextPersistenceFilter@26f6fbbd, org.springframework.security.web.header.HeaderWriterFilter@40889699, org.springframework.security.web.csrf.CsrfFilter@4c3133a1, org.springframework.security.web.authentication.logout.LogoutFilter@54557dd8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59d2e20f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dea8bf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b2b2757, org.springframework.security.web.session.SessionManagementFilter@639f7054, org.springframework.security.web.access.ExceptionTranslationFilter@2fea162a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@539f0729]
+2024-03-20 13:18:59.540 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for any request
+2024-03-20 13:18:59.540  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/spectator/metrics'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@644acaff, org.springframework.security.web.context.SecurityContextPersistenceFilter@776609b, org.springframework.security.web.header.HeaderWriterFilter@99caac2, org.springframework.security.web.csrf.CsrfFilter@3fb2306, org.springframework.security.web.authentication.logout.LogoutFilter@210d1b45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58da1b27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@347c6044, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6241ef96, org.springframework.security.web.session.SessionManagementFilter@5dcf8b37, org.springframework.security.web.access.ExceptionTranslationFilter@5531484a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7caf0725]
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Or [Ant [pattern='/auth/logout', GET], Ant [pattern='/auth/logout', POST], Ant [pattern='/auth/logout', PUT], Ant [pattern='/auth/logout', DELETE]]
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/error']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/favicon.ico']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/resources/**']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/images/**']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/js/**']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/fonts/**']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/css/**']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**/favicon.ico']
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**', OPTIONS]
+2024-03-20 13:18:59.555 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auth/loggedOut']
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auth/user']
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/registerCanary', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/api/v2/autopilot/canaries/{id}', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/api/v1/autopilot/canaries/{id}', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/api/v1/registerCanary', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/api/v2/registerCanary', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/api/v3/registerCanary', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/canaries/{id}', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v1/approvalGates/{id}/trigger', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v2/approvalGates/{id}/trigger', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v4/approvalGates/{id}/trigger', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v5/approvalGates/{id}/trigger', POST]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v2/approvalGateInstances/{id}/status', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v1/approvalGateInstances/{id}/status', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v1/approvalGateInstances/{id}/spinnakerReview', PUT]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/platformservice/v6/applications/{applicationname}/pipeline/{pipelineName}/reference/{ref}/gates/{gatesName}', GET]
+2024-03-20 13:18:59.556 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/oes/echo', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/oes/echo/', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auditservice/v1/echo/events/data', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/auditservice/v1/echo/events/data/', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v1/data/**', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v1/staticPolicy/eval', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v1/staticPolicy/eval/', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/autopilot/mgmt/**', GET]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/datasource/cache/save', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/datasource/cache/evict', DELETE]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/plugins/deck/**']
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/webhooks/**', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/notifications/callbacks/**', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/managed/notifications/callbacks/**', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/platformservice/v1/applications/{applicationName}/pipelines/{pipelineName}', GET]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/dashboardservice/v4/pipelines/{pipelineId}/gates', POST]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/platformservice/v6/usergroups/permissions/users/{username}/resources/{resourceId}', PUT]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/visibilityservice/v4/approvalGates/{id}/connector', PUT]
+2024-03-20 13:18:59.557 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/dashboardservice/v4/pipelines/{pipelineId}/gates/{gateId}', PUT]
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ssdservice/v1/spinnakerevents', POST]
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ssdservice/v1/spinnakerevents/', POST]
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/health']
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/prometheus']
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/info']
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/metrics']
+2024-03-20 13:18:59.558 DEBUG 7 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for Ant [pattern='/**']
+2024-03-20 13:18:59.562  INFO 7 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure com.netflix.spinnaker.gate.config.MultiAuthSupport$1$$Lambda$942/0x000000084092a840@1332d4ae with [org.springframework.security.saml.metadata.MetadataGeneratorFilter@10683f87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a9ad451, org.springframework.security.web.context.SecurityContextPersistenceFilter@24546513, org.springframework.security.web.header.HeaderWriterFilter@4fe3d15f, org.springframework.security.web.authentication.logout.LogoutFilter@1546a589, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@964a7b0, FilterChainProxy[Filter Chains: [DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/login/**'], Filters=[org.springframework.security.extensions.saml2.config.SAMLDslEntryPoint@38321e6f]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/logout/**'], Filters=[org.springframework.security.saml.SAMLLogoutFilter@52f3859a]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/metadata/**'], Filters=[org.springframework.security.saml.metadata.MetadataDisplayFilter@fff7dc9]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/SSO/**'], Filters=[org.springframework.security.saml.SAMLProcessingFilter@426786ee]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/SingleLogout/**'], Filters=[org.springframework.security.saml.SAMLLogoutProcessingFilter@4d97c12c]], DefaultSecurityFilterChain [RequestMatcher=Ant [pattern='/saml/discovery/**'], Filters=[org.springframework.security.saml.SAMLDiscovery@6f49a165]]]], com.opsmx.spinnaker.gate.security.saml.SamlAuthTokenUpdateFilter@78682201, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e5b32ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fe37577, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6e2a6063, com.netflix.spinnaker.gate.filters.FiatSessionFilter@7d7a0e06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c3f9229, org.springframework.security.web.session.SessionManagementFilter@37495d56, org.springframework.security.web.access.ExceptionTranslationFilter@3565ee15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b647344]
+2024-03-20 13:18:59.881  WARN 7 --- [           main] g.kickstart.tools.SchemaClassScanner     : Resolver was provided but no methods on it were used in data fetchers, and can be safely deleted: com.netflix.spinnaker.gate.graphql.resolvers.EmptyNodeResolver@781ebe48
+2024-03-20 13:18:59.881  WARN 7 --- [           main] g.kickstart.tools.SchemaClassScanner     : Root mutation resolver was provided but no methods on it were used in data fetchers for GraphQL type 'Mutation'!  Either remove the graphql.kickstart.tools.GraphQLMutationResolver interface from the resolver or remove the resolver entirely: com.netflix.spinnaker.gate.graphql.RootMutationResolver@5a1dda88
+2024-03-20 13:18:59.951  INFO 7 --- [           main] g.k.s.w.b.GraphQLWebAutoConfiguration    : Building GraphQLObjectMapper including errorHandler: null
+2024-03-20 13:19:00.071  INFO 7 --- [           main] o.s.boot.web.servlet.RegistrationBean    : Filter springSecurityFilterChain was not registered (possibly already registered?)
+2024-03-20 13:19:00.084 DEBUG 7 --- [           main] o.springframework.web.filter.CorsFilter  : Filter 'corsConfigurer' configured for use
+2024-03-20 13:19:00.125  INFO 7 --- [           main] .s.a.AnnotationAsyncExecutionInterceptor : No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
+2024-03-20 13:19:00.226 DEBUG 7 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize(value="hasPermission(#application, 'APPLICATION', 'EXECUTE') && hasPermission(#pipelineNameOrId, 'PIPELINE', 'EXECUTE')") found on specific method: public org.springframework.http.HttpEntity com.netflix.spinnaker.gate.controllers.PipelineController.invokePipelineConfigViaEcho(java.lang.String,java.lang.String,java.util.Map)
+2024-03-20 13:19:00.227 DEBUG 7 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.netflix.spinnaker.gate.controllers.PipelineController; public org.springframework.http.HttpEntity com.netflix.spinnaker.gate.controllers.PipelineController.invokePipelineConfigViaEcho(java.lang.String,java.lang.String,java.util.Map)]] with attributes [[authorize: 'hasPermission(#application, 'APPLICATION', 'EXECUTE') && hasPermission(#pipelineNameOrId, 'PIPELINE', 'EXECUTE')', filter: 'null', filterTarget: 'null']]
+2024-03-20 13:19:00.244 DEBUG 7 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PostFilter(value="hasPermission(filterObject.get('name'), 'APPLICATION', 'READ')") found on specific method: public java.util.List com.netflix.spinnaker.gate.controllers.ApplicationController.getAllApplications(java.lang.String,java.lang.String)
+2024-03-20 13:19:00.245 DEBUG 7 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.netflix.spinnaker.gate.controllers.ApplicationController; public java.util.List com.netflix.spinnaker.gate.controllers.ApplicationController.getAllApplications(java.lang.String,java.lang.String)]] with attributes [[authorize: 'permitAll', filter: 'null', filterTarget: 'null'], [authorize: 'null', filter: 'hasPermission(filterObject.get('name'), 'APPLICATION', 'READ')']]
+2024-03-20 13:19:00.354 DEBUG 7 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize(value="@authController.isAdmin()") found on specific method: public void com.netflix.spinnaker.gate.controllers.AuthController.sync()
+2024-03-20 13:19:00.354 DEBUG 7 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.netflix.spinnaker.gate.controllers.AuthController; public void com.netflix.spinnaker.gate.controllers.AuthController.sync()]] with attributes [[authorize: '@authController.isAdmin()', filter: 'null', filterTarget: 'null']]
+2024-03-20 13:19:00.556 DEBUG 7 --- [           main] .PrePostAnnotationSecurityMetadataSource : @org.springframework.security.access.prepost.PreAuthorize(value="hasPermission(#this.this.appName, 'APPLICATION', 'WRITE')") found on specific method: public java.util.Map com.netflix.spinnaker.gate.plugins.web.info.PluginInfoController.deletePluginInfo(java.lang.String)
+2024-03-20 13:19:00.556 DEBUG 7 --- [           main] m.DelegatingMethodSecurityMetadataSource : Caching method [CacheKey[com.netflix.spinnaker.gate.plugins.web.info.PluginInfoController; public java.util.Map com.netflix.spinnaker.gate.plugins.web.info.PluginInfoController.deletePluginInfo(java.lang.String)]] with attributes [[authorize: 'hasPermission(#this.this.appName, 'APPLICATION', 'WRITE')', filter: 'null', filterTarget: 'null']]
+2024-03-20 13:19:00.800 DEBUG 7 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 374 mappings in 'requestMappingHandlerMapping'
+2024-03-20 13:19:00.894  INFO 7 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2024-03-20 13:19:01.172  INFO 7 --- [           main] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1 started:1)
+2024-03-20 13:19:01.172  INFO 7 --- [           main] o.a.c.impl.engine.AbstractCamelContext   :     Started userActivity (direct://userLoginDetails)
+2024-03-20 13:19:01.173  INFO 7 --- [           main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 3.14.1 (camel-1) started in 159ms (build:25ms init:70ms start:64ms)
+2024-03-20 13:19:01.364  INFO 7 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-03-20 13:19:01.456 DEBUG 7 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 1 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-20 13:19:01.523 DEBUG 7 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2024-03-20 13:19:01.540 DEBUG 7 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-03-20 13:19:01.552 DEBUG 7 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 5 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-20 13:19:01.922  INFO 7 --- [           main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2024-03-20 13:19:02.020 DEBUG 7 --- [           main] o.s.w.s.s.s.ServerEndpointExporter       : Registering ServerEndpointConfig: ServerEndpointRegistration for path '/subscriptions': class graphql.kickstart.servlet.GraphQLWebsocketServlet
+2024-03-20 13:19:02.034  INFO 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2024-03-20 13:19:02.035  INFO 7 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-03-20 13:19:02.045  INFO 7 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-03-20 13:19:02.143  INFO 7 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-03-20 13:19:02.244  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: bakeOptionsUsingGET_1
+2024-03-20 13:19:02.254  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getBuildsUsingGET_1
+2024-03-20 13:19:02.257  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClustersUsingGET_1
+2024-03-20 13:19:02.258  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClustersUsingGET_2
+2024-03-20 13:19:02.261  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getServerGroupsUsingGET_1
+2024-03-20 13:19:02.299  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_1
+2024-03-20 13:19:02.311  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_2
+2024-03-20 13:19:02.315  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: downloadCSVFileAuditServiceUsingGET_1
+2024-03-20 13:19:02.363  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postOesResponseUsingPOST_1
+2024-03-20 13:19:02.400  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cancelPipelineUsingPUT_1
+2024-03-20 13:19:02.401  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePipelineUsingDELETE_1
+2024-03-20 13:19:02.403  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: evaluateExpressionForExecutionViaPOSTUsingPOST_1
+2024-03-20 13:19:02.405  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokePipelineConfigUsingPOST_1
+2024-03-20 13:19:02.416  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_3
+2024-03-20 13:19:02.417  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2024-03-20 13:19:02.418  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClustersUsingGET_3
+2024-03-20 13:19:02.418  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_4
+2024-03-20 13:19:02.423  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_5
+2024-03-20 13:19:02.423  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allByAccountUsingGET_1
+2024-03-20 13:19:02.424  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSecurityGroupUsingGET_1
+2024-03-20 13:19:02.427  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allByCloudProviderUsingGET_1
+2024-03-20 13:19:02.428  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: cancelTaskUsingPUT_1
+2024-03-20 13:19:02.429  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getTaskUsingGET_1
+2024-03-20 13:19:02.430  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getTaskDetailsUsingGET_1
+2024-03-20 13:19:02.430  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: taskUsingPOST_1
+2024-03-20 13:19:02.432  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2024-03-20 13:19:02.432  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2024-03-20 13:19:02.433  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2024-03-20 13:19:02.434  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_1
+2024-03-20 13:19:02.434  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listPipelineTemplateDependentsUsingGET_1
+2024-03-20 13:19:02.436  INFO 7 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2024-03-20 13:19:02.526  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Refreshing plugin cache
+2024-03-20 13:19:02.527  WARN 7 --- [           main] c.n.s.k.d.NoDiscoveryStatusPublisher     : No service discovery client is available, assuming application is UP
+2024-03-20 13:19:02.528  INFO 7 --- [           main] c.n.s.k.d.DiscoveryStatusListener        : Instance status has changed to UP in service discovery
+2024-03-20 13:19:02.529  INFO 7 --- [           main] com.netflix.spinnaker.gate.Main          : Started Main in 7.596 seconds (JVM running for 8.026)
+2024-03-20 13:19:02.537  WARN 7 --- [           main] o.s.b.c.p.m.PropertiesMigrationListener  : 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'file [/opt/spinnaker/config/gate.yml]' via location 'optional:/opt/spinnaker/config/'':
+	Key: server.tomcat.internal-proxies
+		Replacement: server.tomcat.remoteip.internal-proxies
+	Key: server.tomcat.protocol-header
+		Replacement: server.tomcat.remoteip.protocol-header
+	Key: server.tomcat.remote-ip-header
+		Replacement: server.tomcat.remoteip.remote-ip-header
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2024-03-20 13:19:02.543  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---> HTTP GET http://spin-clouddriver-ro:7002/health
+2024-03-20 13:19:02.547  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.ClouddriverService    : ---> HTTP GET http://spin-clouddriver-ro:7002/applications?restricted=false&expand=true
+2024-03-20 13:19:02.547  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.Front50Service        : ---> HTTP GET http://spin-front50:8080/v2/applications?restricted=false
+2024-03-20 13:19:02.547  INFO 7 --- [TaskScheduler-2] c.n.s.g.s.internal.ClouddriverService    : ---> HTTP GET http://spin-clouddriver-ro:7002/credentials?expand=true
+2024-03-20 13:19:02.579  INFO 7 --- [TaskScheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2024-03-20 13:19:02.579  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Downloading plugin 'Opsmx.TestVerificationGatePlugin@1.0.1'
+2024-03-20 13:19:02.601  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'TestVerificationPlugin-v1.0.1-SNAPSHOT.zip' in 'TestVerificationPlugin-v1.0.1-SNAPSHOT'
+2024-03-20 13:19:02.602  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'deck.zip' in 'deck'
+2024-03-20 13:19:02.602  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Adding plugin 'Opsmx.TestVerificationGatePlugin@1.0.1' to local cache: /tmp/downloaded-plugin-cache12750613978702444257/Opsmx.TestVerificationGatePlugin/1.0.1
+2024-03-20 13:19:02.603  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Downloading plugin 'Opsmx.VisibilityApprovalPlugin@1.0.1'
+2024-03-20 13:19:02.610  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'ApprovalStagePlugin-v1.0.1-SNAPSHOT.zip' in 'ApprovalStagePlugin-v1.0.1-SNAPSHOT'
+2024-03-20 13:19:02.614  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'deck.zip' in 'deck'
+2024-03-20 13:19:02.614  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Adding plugin 'Opsmx.VisibilityApprovalPlugin@1.0.1' to local cache: /tmp/downloaded-plugin-cache12750613978702444257/Opsmx.VisibilityApprovalPlugin/1.0.1
+2024-03-20 13:19:02.615  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Downloading plugin 'Opsmx.VerificationGatePlugin@1.0.1'
+2024-03-20 13:19:02.619  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'VerificationPlugin-v1.0.1-SNAPSHOT.zip' in 'VerificationPlugin-v1.0.1-SNAPSHOT'
+2024-03-20 13:19:02.621  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'deck.zip' in 'deck'
+2024-03-20 13:19:02.621  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Adding plugin 'Opsmx.VerificationGatePlugin@1.0.1' to local cache: /tmp/downloaded-plugin-cache12750613978702444257/Opsmx.VerificationGatePlugin/1.0.1
+2024-03-20 13:19:02.622  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Downloading plugin 'Opsmx.PolicyGatePlugin@1.0.1'
+2024-03-20 13:19:02.627  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'policyPlugin-v1.0.1-SNAPSHOT.zip' in 'policyPlugin-v1.0.1-SNAPSHOT'
+2024-03-20 13:19:02.628  INFO 7 --- [TaskScheduler-5] org.pf4j.util.FileUtils                  : Expanded plugin zip 'deck.zip' in 'deck'
+2024-03-20 13:19:02.628  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Adding plugin 'Opsmx.PolicyGatePlugin@1.0.1' to local cache: /tmp/downloaded-plugin-cache12750613978702444257/Opsmx.PolicyGatePlugin/1.0.1
+2024-03-20 13:19:02.629  INFO 7 --- [TaskScheduler-5] c.n.s.gate.plugins.deck.DeckPluginCache  : Cached 4 deck plugins
+2024-03-20 13:19:54.259  INFO 7 --- [nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-20 13:19:54.259  INFO 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-20 13:19:54.259 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-20 13:19:54.259 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-20 13:19:54.259 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-20 13:19:54.260 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d84189
+2024-03-20 13:19:54.260 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@49be20c2
+2024-03-20 13:19:54.260 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-20 13:19:54.260  INFO 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-20 13:19:54.280 DEBUG 7 --- [nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /health
+2024-03-20 13:19:54.282 DEBUG 7 --- [nio-8084-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2024-03-20 13:19:54.284 DEBUG 7 --- [nio-8084-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-03-20 13:19:54.286 DEBUG 7 --- [nio-8084-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /health] with attributes [permitAll]
+2024-03-20 13:19:54.286 DEBUG 7 --- [nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /health
+2024-03-20 13:19:54.301 DEBUG 7 --- [nio-8084-exec-2] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:19:54.301 DEBUG 7 --- [nio-8084-exec-2] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:19:54.305 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/health", parameters={}
+2024-03-20 13:19:54.330 DEBUG 7 --- [nio-8084-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2024-03-20 13:19:54.332 DEBUG 7 --- [nio-8084-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@19da2399]
+2024-03-20 13:19:54.336 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:19:54.337 DEBUG 7 --- [nio-8084-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:19:54.339 DEBUG 7 --- [nio-8084-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:19:54.339 DEBUG 7 --- [nio-8084-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.ClouddriverService    : ---- ERROR http://spin-clouddriver-ro:7002/applications?restricted=false&expand=true
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---- ERROR http://spin-clouddriver-ro:7002/health
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-2] c.n.s.g.s.internal.ClouddriverService    : ---- ERROR http://spin-clouddriver-ro:7002/credentials?expand=true
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.Front50Service        : ---- ERROR http://spin-front50:8080/v2/applications?restricted=false
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.Front50Service        : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy203.getAllApplicationsUnrestricted(Unknown Source)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:256)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:256)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy:254)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 17 more
+
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.ClouddriverService    : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy177.getAllApplicationsUnrestricted(Unknown Source)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:331)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:331)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy:329)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 17 more
+
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.Front50Service        : ---- END ERROR
+2024-03-20 13:20:02.551  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.ClouddriverService    : ---- END ERROR
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-2] c.n.s.g.s.internal.ClouddriverService    : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy177.getAccountDetails(Unknown Source)
+	at com.netflix.spinnaker.gate.services.internal.ClouddriverService$getAccountDetails.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:119)
+	at com.netflix.spinnaker.gate.services.DefaultProviderLookupService$_refreshCache_closure1.doCall(DefaultProviderLookupService.groovy:63)
+	at com.netflix.spinnaker.gate.services.DefaultProviderLookupService$_refreshCache_closure1.doCall(DefaultProviderLookupService.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:399)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.security.AuthenticatedRequest$allowAnonymous.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at com.netflix.spinnaker.gate.services.DefaultProviderLookupService.refreshCache(DefaultProviderLookupService.groovy:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 39 more
+
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-2] c.n.s.g.s.internal.ClouddriverService    : ---- END ERROR
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy224.health(Unknown Source)
+	at com.netflix.spinnaker.gate.services.internal.HealthCheckableService$health.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:119)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2$_closure3.doCall(DownstreamServicesHealthIndicator.groovy:100)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2$_closure3.doCall(DownstreamServicesHealthIndicator.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:399)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.security.AuthenticatedRequest$allowAnonymous$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2.doCall(DownstreamServicesHealthIndicator.groovy:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5962)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2408)
+	at org.codehaus.groovy.runtime.dgm$187.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:244)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator.checkDownstreamServiceHealth(DownstreamServicesHealthIndicator.groovy:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 57 more
+
+2024-03-20 13:20:02.551  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---- END ERROR
+2024-03-20 13:20:02.555 ERROR 7 --- [pool-3-thread-1] c.n.s.gate.services.ApplicationService   : Falling back to application cache
+
+retrofit.RetrofitError: timeout
+	at retrofit.RetrofitError.networkError(RetrofitError.java:27) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:395) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240) ~[retrofit-1.9.0.jar:na]
+	at com.sun.proxy.$Proxy203.getAllApplicationsUnrestricted(Unknown Source) ~[na:na]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:256) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:256) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy:254) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41) ~[retrofit1-okhttp3-client-1.1.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) ~[retrofit-1.9.0.jar:na]
+	... 14 common frames omitted
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74) ~[kork-web-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36) ~[kork-web-7.169.1.jar:7.169.1]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	... 17 common frames omitted
+
+2024-03-20 13:20:02.555 ERROR 7 --- [pool-3-thread-2] c.n.s.gate.services.ApplicationService   : Falling back to application cache
+
+retrofit.RetrofitError: timeout
+	at retrofit.RetrofitError.networkError(RetrofitError.java:27) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:395) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240) ~[retrofit-1.9.0.jar:na]
+	at com.sun.proxy.$Proxy177.getAllApplicationsUnrestricted(Unknown Source) ~[na:na]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:331) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:331) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy:329) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41) ~[retrofit1-okhttp3-client-1.1.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) ~[retrofit-1.9.0.jar:na]
+	... 14 common frames omitted
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74) ~[kork-web-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36) ~[kork-web-7.169.1.jar:7.169.1]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	... 17 common frames omitted
+
+2024-03-20 13:20:02.559 ERROR 7 --- [TaskScheduler-2] c.n.s.g.s.DefaultProviderLookupService   : Unable to refresh account details cache, reason: timeout
+2024-03-20 13:20:02.561 ERROR 7 --- [TaskScheduler-4] .s.g.h.DownstreamServicesHealthIndicator : Exception received during health check of service: clouddriver, timeout (url: http://spin-clouddriver-ro:7002/health)
+2024-03-20 13:20:02.561  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---> HTTP GET http://spin-echo-worker:8089/health
+2024-03-20 13:20:02.616  INFO 7 --- [TaskScheduler-6] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2024-03-20 13:20:02.630  INFO 7 --- [TaskScheduler-9] c.n.s.gate.plugins.deck.DeckPluginCache  : Refreshing plugin cache
+2024-03-20 13:20:02.649  INFO 7 --- [TaskScheduler-9] c.n.s.gate.plugins.deck.DeckPluginCache  : Cached 4 deck plugins
+2024-03-20 13:20:07.561  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.Front50Service        : ---> HTTP GET http://spin-front50:8080/v2/applications?restricted=false
+2024-03-20 13:20:07.561  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.ClouddriverService    : ---> HTTP GET http://spin-clouddriver-ro:7002/applications?restricted=false&expand=true
+2024-03-20 13:20:29.039 DEBUG 7 --- [nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-03-20 13:20:29.039  INFO 7 --- [nio-8084-exec-4] o.s.s.s.m.MetadataGeneratorFilter        : No default metadata configured, generating with default values, please pre-configure metadata for production use
+2024-03-20 13:20:29.060  INFO 7 --- [nio-8084-exec-4] o.s.s.s.m.MetadataGeneratorFilter        : Created default metadata for system with entityID: appleisd
+2024-03-20 13:20:29.060 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Clearing metadata cache
+2024-03-20 13:20:29.060 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Reloading metadata
+2024-03-20 13:20:29.060 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Refreshing metadata provider org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.060 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Trust verification skipped for metadata provider org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.061 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Created new trust manager for metadata provider org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.061 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Adding signature filter
+2024-03-20 13:20:29.061 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Initializing extendedMetadataDelegate org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.061 DEBUG 7 --- [nio-8084-exec-4] o.s.s.s.m.ExtendedMetadataDelegate       : Initializing delegate
+2024-03-20 13:20:29.079  INFO 7 --- [nio-8084-exec-4] .s.m.p.AbstractReloadingMetadataProvider : New metadata succesfully loaded for '/opt/spinnaker/saml/oesmetadata.xml'
+2024-03-20 13:20:29.084  INFO 7 --- [nio-8084-exec-4] .s.m.p.AbstractReloadingMetadataProvider : Next refresh cycle for metadata provider '/opt/spinnaker/saml/oesmetadata.xml' will occur on '2024-03-20T16:20:29.074Z' ('2024-03-20T16:20:29.074Z' local time)
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Initializing provider data org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Found metadata EntityDescriptor with ID
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Remote entity http://www.okta.com/exkfx0fdjps2Ulpnk5d7 available
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Metadata provider was initialized org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider@48bc5cc0
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Refreshing metadata provider org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Setting trust verification for metadata provider org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.084 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Revocation checking not forced
+2024-03-20 13:20:29.085 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Adding PKIX trust anchor saml for metadata verification of provider org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Created new trust manager for metadata provider org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Adding signature filter
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Initializing extendedMetadataDelegate org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.s.m.ExtendedMetadataDelegate       : Initializing delegate
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Initializing provider data org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Found metadata EntityDescriptor with ID
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Local entity appleisd doesn't have an alias
+2024-03-20 13:20:29.086 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Metadata provider was initialized org.springframework.security.saml.metadata.MetadataMemoryProvider@f797340
+2024-03-20 13:20:29.087 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.metadata.MetadataManager      : Reloading metadata was finished
+2024-03-20 13:20:29.098 DEBUG 7 --- [nio-8084-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2024-03-20 13:20:29.101 DEBUG 7 --- [nio-8084-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-03-20 13:20:29.102 DEBUG 7 --- [nio-8084-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /] with attributes [authenticated]
+2024-03-20 13:20:29.106 DEBUG 7 --- [nio-8084-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Saved request https://isd4042.sjdc.opsmx.org/ to session
+2024-03-20 13:20:29.115 DEBUG 7 --- [nio-8084-exec-4] o.s.s.s.context.SAMLContextProviderImpl  : No IDP specified, using default http://www.okta.com/exkfx0fdjps2Ulpnk5d7
+2024-03-20 13:20:29.115 DEBUG 7 --- [nio-8084-exec-4] o.s.security.saml.util.SAMLUtil          : Index for AssertionConsumerService not specified, returning default
+2024-03-20 13:20:29.116 DEBUG 7 --- [nio-8084-exec-4] o.s.security.saml.SAMLEntryPoint         : Processing SSO using WebSSO profile
+2024-03-20 13:20:29.116 DEBUG 7 --- [nio-8084-exec-4] o.s.s.saml.websso.WebSSOProfileImpl      : Using default consumer service with binding urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+2024-03-20 13:20:29.157 DEBUG 7 --- [nio-8084-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2024-03-20 13:20:29.166  INFO 7 --- [nio-8084-exec-4] o.s.security.saml.log.SAMLDefaultLogger  : AuthNRequest;SUCCESS;127.0.0.1;appleisd;http://www.okta.com/exkfx0fdjps2Ulpnk5d7;;;
+2024-03-20 13:20:29.166 DEBUG 7 --- [nio-8084-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2024-03-20 13:20:29.166 DEBUG 7 --- [nio-8084-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:29.528 DEBUG 7 --- [nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2024-03-20 13:20:29.529 DEBUG 7 --- [nio-8084-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2024-03-20 13:20:29.530 DEBUG 7 --- [nio-8084-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-03-20 13:20:29.530 DEBUG 7 --- [nio-8084-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /favicon.ico] with attributes [permitAll]
+2024-03-20 13:20:29.530 DEBUG 7 --- [nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2024-03-20 13:20:29.537 DEBUG 7 --- [nio-8084-exec-5] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:20:29.537 DEBUG 7 --- [nio-8084-exec-5] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:20:29.537 DEBUG 7 --- [nio-8084-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-03-20 13:20:29.545 DEBUG 7 --- [nio-8084-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-03-20 13:20:29.561 DEBUG 7 --- [nio-8084-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:20:29.562 DEBUG 7 --- [nio-8084-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:20:29.566 DEBUG 7 --- [nio-8084-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:20:29.566 DEBUG 7 --- [nio-8084-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:32.560  INFO 7 --- [TaskScheduler-7] c.n.s.g.s.internal.ClouddriverService    : ---> HTTP GET http://spin-clouddriver-ro:7002/credentials?expand=true
+2024-03-20 13:20:37.247 DEBUG 7 --- [nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /saml/SSO
+2024-03-20 13:20:37.247 DEBUG 7 --- [nio-8084-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2024-03-20 13:20:37.247 DEBUG 7 --- [nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /saml/SSO
+2024-03-20 13:20:37.247 DEBUG 7 --- [nio-8084-exec-6] o.s.security.saml.SAMLProcessingFilter   : Attempting SAML2 authentication using profile urn:oasis:names:tc:SAML:2.0:profiles:SSO:browser
+2024-03-20 13:20:37.257 DEBUG 7 --- [nio-8084-exec-6] o.s.s.saml.processor.SAMLProcessorImpl   : Retrieving message using binding urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+2024-03-20 13:20:37.367 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.t.MetadataCredentialResolver     : Added 1 credentials resolved from metadata of entity http://www.okta.com/exkfx0fdjps2Ulpnk5d7
+2024-03-20 13:20:37.370  INFO 7 --- [nio-8084-exec-6] colMessageXMLSignatureSecurityPolicyRule : Validation of protocol message signature succeeded, message type: {urn:oasis:names:tc:SAML:2.0:protocol}Response
+2024-03-20 13:20:37.371 DEBUG 7 --- [nio-8084-exec-6] o.s.security.saml.util.SAMLUtil          : Found endpoint org.opensaml.saml2.metadata.impl.AssertionConsumerServiceImpl@301201b0 for request URL https://isd4042.sjdc.opsmx.org/gate/saml/SSO based on location attribute in metadata
+2024-03-20 13:20:37.372 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Verifying issuer of the Response
+2024-03-20 13:20:37.372 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Verifying signature
+2024-03-20 13:20:37.374 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Processing Bearer subject confirmation
+2024-03-20 13:20:37.374 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Verifying received AuthnContext org.opensaml.saml2.core.impl.AuthnContextImpl@77a37f1e against requested null
+2024-03-20 13:20:37.374 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Validation of authentication statement in assertion id6087604629835965366921325 was successful
+2024-03-20 13:20:37.374 DEBUG 7 --- [nio-8084-exec-6] o.s.s.s.w.WebSSOProfileConsumerImpl      : Including attribute memberOf from assertion id6087604629835965366921325
+2024-03-20 13:20:37.424 DEBUG 7 --- [nio-8084-exec-6] c.n.s.gate.security.saml.SamlSsoConfig   : Successful SAML authentication (user: hanumesh.kumar@opsmx.io, roleCount: 7, roles: [everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group])
+2024-03-20 13:20:37.432  INFO 7 --- [nio-8084-exec-6] o.s.security.saml.log.SAMLDefaultLogger  : AuthNResponse;SUCCESS;127.0.0.1;appleisd;http://www.okta.com/exkfx0fdjps2Ulpnk5d7;hanumesh.kumar@opsmx.io;;
+2024-03-20 13:20:37.432 DEBUG 7 --- [nio-8084-exec-6] o.s.security.saml.SAMLProcessingFilter   : Set SecurityContextHolder to ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6fc7b504, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6fc7b504, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]
+2024-03-20 13:20:37.433 DEBUG 7 --- [nio-8084-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2024-03-20 13:20:37.434 DEBUG 7 --- [nio-8084-exec-6] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-20 13:20:37.434 DEBUG 7 --- [nio-8084-exec-6] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6fc7b504, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6fc7b504, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]] to HttpSession [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@77439ad8]
+2024-03-20 13:20:37.440 DEBUG 7 --- [nio-8084-exec-6] o.s.security.saml.util.SAMLUtil          : XMLObject already had cached DOM, returning that element
+2024-03-20 13:20:37.443 DEBUG 7 --- [nio-8084-exec-6] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6fc7b504, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6fc7b504, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]] to HttpSession [org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper$HttpSessionWrapper@77439ad8]
+2024-03-20 13:20:37.443 DEBUG 7 --- [nio-8084-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:37.457 DEBUG 7 --- [TaskExecutor-18] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:20:37.857 DEBUG 7 --- [nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-03-20 13:20:37.859 DEBUG 7 --- [nio-8084-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5ee14149, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5ee14149, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:37.859 DEBUG 7 --- [nio-8084-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5ee14149, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5ee14149, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:37.859 DEBUG 7 --- [nio-8084-exec-7] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5ee14149, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5ee14149, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:20:37.859 DEBUG 7 --- [nio-8084-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /] with attributes [authenticated]
+2024-03-20 13:20:37.859 DEBUG 7 --- [nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-03-20 13:20:37.863 DEBUG 7 --- [nio-8084-exec-7] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:20:37.863 DEBUG 7 --- [nio-8084-exec-7] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:20:37.864 DEBUG 7 --- [nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-03-20 13:20:37.864 DEBUG 7 --- [nio-8084-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.RootController#root(HttpServletResponse)
+2024-03-20 13:20:37.865  INFO 7 --- [nio-8084-exec-7] c.n.s.gate.controllers.RootController    : uiBaseUrl : /ui/
+2024-03-20 13:20:37.877 DEBUG 7 --- [nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-03-20 13:20:37.877 DEBUG 7 --- [nio-8084-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:53.014 DEBUG 7 --- [nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /auth/user
+2024-03-20 13:20:53.015 DEBUG 7 --- [nio-8084-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@386432d7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@386432d7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:53.015 DEBUG 7 --- [nio-8084-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@386432d7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@386432d7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@386432d7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@386432d7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /auth/user] with attributes [permitAll]
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /auth/user
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:20:53.016 DEBUG 7 --- [nio-8084-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/auth/user", parameters={}
+2024-03-20 13:20:53.017 DEBUG 7 --- [nio-8084-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.AuthController#user(User)
+2024-03-20 13:20:53.029 DEBUG 7 --- [nio-8084-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:20:53.029 DEBUG 7 --- [nio-8084-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.netflix.spinnaker.security.User@386432d7]
+2024-03-20 13:20:53.030 DEBUG 7 --- [nio-8084-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:20:53.032 DEBUG 7 --- [nio-8084-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:54.210 DEBUG 7 --- [io-8084-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /health
+2024-03-20 13:20:54.210 DEBUG 7 --- [io-8084-exec-10] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2024-03-20 13:20:54.210 DEBUG 7 --- [io-8084-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-03-20 13:20:54.210 DEBUG 7 --- [io-8084-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /health] with attributes [permitAll]
+2024-03-20 13:20:54.210 DEBUG 7 --- [io-8084-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /health
+2024-03-20 13:20:54.211 DEBUG 7 --- [io-8084-exec-10] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:20:54.211 DEBUG 7 --- [io-8084-exec-10] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:20:54.211 DEBUG 7 --- [io-8084-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/health", parameters={}
+2024-03-20 13:20:54.213 DEBUG 7 --- [io-8084-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2024-03-20 13:20:54.213 DEBUG 7 --- [io-8084-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@86d84db]
+2024-03-20 13:20:54.214 DEBUG 7 --- [io-8084-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:20:54.214 DEBUG 7 --- [io-8084-exec-10] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:20:54.215 DEBUG 7 --- [io-8084-exec-10] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2024-03-20 13:20:54.215 DEBUG 7 --- [io-8084-exec-10] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:59.148 DEBUG 7 --- [nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /deck/
+2024-03-20 13:20:59.149 DEBUG 7 --- [nio-8084-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:59.149 DEBUG 7 --- [nio-8084-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:59.149 DEBUG 7 --- [nio-8084-exec-1] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:20:59.150 DEBUG 7 --- [nio-8084-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /deck/] with attributes [authenticated]
+2024-03-20 13:20:59.150 DEBUG 7 --- [nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /deck/
+2024-03-20 13:20:59.150 DEBUG 7 --- [nio-8084-exec-1] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:20:59.150 DEBUG 7 --- [nio-8084-exec-1] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:20:59.150 DEBUG 7 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/deck/", parameters={}
+2024-03-20 13:20:59.152 DEBUG 7 --- [nio-8084-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-03-20 13:20:59.153 DEBUG 7 --- [nio-8084-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-03-20 13:20:59.155 DEBUG 7 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-03-20 13:20:59.155 DEBUG 7 --- [nio-8084-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1fa577d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1fa577d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-03-20 13:20:59.158 DEBUG 7 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-03-20 13:20:59.159 DEBUG 7 --- [nio-8084-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.kork.web.controllers.GenericErrorController#error(Boolean, WebRequest)
+2024-03-20 13:20:59.162 DEBUG 7 --- [nio-8084-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:20:59.162 DEBUG 7 --- [nio-8084-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [{timestamp=Wed Mar 20 13:20:59 UTC 2024, status=404, error=Not Found, message=No message available}]
+2024-03-20 13:20:59.164 DEBUG 7 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-03-20 13:20:59.165 DEBUG 7 --- [nio-8084-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:02.433 DEBUG 7 --- [nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /session/getSessionTimeout
+2024-03-20 13:21:02.433 DEBUG 7 --- [nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu
+2024-03-20 13:21:02.433 DEBUG 7 --- [nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /auth/user
+2024-03-20 13:21:02.434 DEBUG 7 --- [nio-8084-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@9ee2fd1, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@9ee2fd1, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.434 DEBUG 7 --- [nio-8084-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@9ee2fd1, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@9ee2fd1, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@9ee2fd1, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@9ee2fd1, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1277c148, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1277c148, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1277c148, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1277c148, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu] with attributes [authenticated]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@1277c148, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@1277c148, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /auth/user] with attributes [permitAll]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /auth/user
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6afadfe, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6afadfe, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6afadfe, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6afadfe, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@6afadfe, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@6afadfe, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/auth/user", parameters={}
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu", parameters={}
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /session/getSessionTimeout] with attributes [authenticated]
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /session/getSessionTimeout
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-2] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:02.435 DEBUG 7 --- [nio-8084-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.AuthController#user(User)
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/session/getSessionTimeout", parameters={}
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.opsmx.spinnaker.gate.controllers.OpsmxSessionController#getSessionTimeout()
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.netflix.spinnaker.security.User@1277c148]
+2024-03-20 13:21:02.436  INFO 7 --- [nio-8084-exec-2] c.o.s.g.c.OpsmxSessionController         : sessionTimeout : 7200
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [7200]
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:02.436 DEBUG 7 --- [nio-8084-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.OpsmxDashboardController#getDashboardResponse4(String, String, String, String, Integer, Integer, String, String, String, Integer)
+2024-03-20 13:21:02.437 DEBUG 7 --- [nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:02.439 DEBUG 7 --- [nio-8084-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:02.439 DEBUG 7 --- [nio-8084-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:02.445  INFO 7 --- [nio-8084-exec-3] c.n.s.g.s.i.OpsmxDashboardService        : ---> HTTP GET http://oes-dashboard:8094/dashboardservice/v2/users/hanumesh.kumar%40opsmx.io/dynamicMenu
+2024-03-20 13:21:02.459  INFO 7 --- [nio-8084-exec-3] c.n.s.g.s.i.OpsmxDashboardService        : <--- HTTP 200 http://oes-dashboard:8094/dashboardservice/v2/users/hanumesh.kumar%40opsmx.io/dynamicMenu (14ms)
+2024-03-20 13:21:02.460 DEBUG 7 --- [nio-8084-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:02.460 DEBUG 7 --- [nio-8084-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{menu=[{id=1, name=Dashboard, link=, disabled=false, subMenu=[{id=21, name=Application Dashboard, li (truncated)...]
+2024-03-20 13:21:02.461 DEBUG 7 --- [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:02.463 DEBUG 7 --- [nio-8084-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:02.476 DEBUG 7 --- [TaskExecutor-27] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:21:02.563  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---- ERROR http://spin-echo-worker:8089/health
+2024-03-20 13:21:02.563  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy224.health(Unknown Source)
+	at com.netflix.spinnaker.gate.services.internal.HealthCheckableService$health.call(Unknown Source)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2$_closure3.doCall(DownstreamServicesHealthIndicator.groovy:100)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2$_closure3.doCall(DownstreamServicesHealthIndicator.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:399)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.security.AuthenticatedRequest$allowAnonymous$0.call(Unknown Source)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator$_checkDownstreamServiceHealth_closure2.doCall(DownstreamServicesHealthIndicator.groovy:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5962)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2408)
+	at org.codehaus.groovy.runtime.dgm$187.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:244)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at com.netflix.spinnaker.gate.health.DownstreamServicesHealthIndicator.checkDownstreamServiceHealth(DownstreamServicesHealthIndicator.groovy:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 51 more
+
+2024-03-20 13:21:02.563  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---- END ERROR
+2024-03-20 13:21:02.563 ERROR 7 --- [TaskScheduler-4] .s.g.h.DownstreamServicesHealthIndicator : Exception received during health check of service: echo, timeout (url: http://spin-echo-worker:8089/health)
+2024-03-20 13:21:02.563  INFO 7 --- [TaskScheduler-4] c.n.s.g.s.i.HealthCheckableService       : ---> HTTP GET http://spin-front50:8080/health
+2024-03-20 13:21:02.649  INFO 7 --- [TaskScheduler-3] c.n.s.gate.plugins.deck.DeckPluginCache  : Refreshing plugin cache
+2024-03-20 13:21:02.660  INFO 7 --- [TaskScheduler-2] s.k.p.u.r.r.RemotePluginInfoReleaseCache : Cached 0 remote plugin configurations.
+2024-03-20 13:21:02.676  INFO 7 --- [TaskScheduler-3] c.n.s.gate.plugins.deck.DeckPluginCache  : Cached 4 deck plugins
+2024-03-20 13:21:02.747 DEBUG 7 --- [nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@3128caca, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@3128caca, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@3128caca, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@3128caca, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@3128caca, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@3128caca, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu] with attributes [authenticated]
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:02.748 DEBUG 7 --- [nio-8084-exec-5] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:02.749 DEBUG 7 --- [nio-8084-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/dashboardservice/v2/users/hanumesh.kumar@opsmx.io/dynamicMenu", parameters={}
+2024-03-20 13:21:02.749 DEBUG 7 --- [nio-8084-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.OpsmxDashboardController#getDashboardResponse4(String, String, String, String, Integer, Integer, String, String, String, Integer)
+2024-03-20 13:21:02.750  INFO 7 --- [nio-8084-exec-5] c.n.s.g.s.i.OpsmxDashboardService        : ---> HTTP GET http://oes-dashboard:8094/dashboardservice/v2/users/hanumesh.kumar%40opsmx.io/dynamicMenu
+2024-03-20 13:21:02.756  INFO 7 --- [nio-8084-exec-5] c.n.s.g.s.i.OpsmxDashboardService        : <--- HTTP 200 http://oes-dashboard:8094/dashboardservice/v2/users/hanumesh.kumar%40opsmx.io/dynamicMenu (5ms)
+2024-03-20 13:21:02.756 DEBUG 7 --- [nio-8084-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:02.756 DEBUG 7 --- [nio-8084-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{menu=[{id=1, name=Dashboard, link=, disabled=false, subMenu=[{id=21, name=Application Dashboard, li (truncated)...]
+2024-03-20 13:21:02.757 DEBUG 7 --- [nio-8084-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:02.758 DEBUG 7 --- [nio-8084-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:02.775 DEBUG 7 --- [TaskExecutor-28] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:21:03.638 DEBUG 7 --- [nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /oes/accountsConfig/v5/spinnaker
+2024-03-20 13:21:03.639 DEBUG 7 --- [nio-8084-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@74961a94, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@74961a94, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.639 DEBUG 7 --- [nio-8084-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@74961a94, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@74961a94, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@74961a94, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@74961a94, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /oes/accountsConfig/v5/spinnaker] with attributes [authenticated]
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /oes/accountsConfig/v5/spinnaker
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:03.640 DEBUG 7 --- [nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/oes/accountsConfig/v5/spinnaker", parameters={}
+2024-03-20 13:21:03.641 DEBUG 7 --- [nio-8084-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.OpsmxOesController#getOesResponse4(String, String, String)
+2024-03-20 13:21:03.643  INFO 7 --- [nio-8084-exec-6] c.n.s.g.s.internal.OpsmxOesService       : ---> HTTP GET http://oes-sapor:8085/oes/accountsConfig/v5/spinnaker
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /platformservice/v6/users/hanumesh.kumar@opsmx.io/features/APP
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /platformservice/v6/summaryCounts?username=hanumesh.kumar@opsmx.io&noOfDays=7
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@4b2592e7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@4b2592e7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@4b2592e7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@4b2592e7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5f8627d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5f8627d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@4b2592e7, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@4b2592e7, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to SecurityContextImpl [Authentication=ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5f8627d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5f8627d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]]
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-8] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'ExpiringUsernameAuthenticationToken [Principal=com.netflix.spinnaker.security.User@5f8627d2, Credentials=[PROTECTED], Authenticated=true, Details=com.netflix.spinnaker.security.User@5f8627d2, Granted Authorities=[everyone, opsmx-devops, ninjateam, admin, devopsteam, opsmx-admin, tcp-group]]'
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /platformservice/v6/users/hanumesh.kumar@opsmx.io/features/APP] with attributes [authenticated]
+2024-03-20 13:21:03.645 DEBUG 7 --- [nio-8084-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /platformservice/v6/users/hanumesh.kumar@opsmx.io/features/APP
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /platformservice/v6/summaryCounts?username=hanumesh.kumar@opsmx.io&noOfDays=7] with attributes [authenticated]
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /platformservice/v6/summaryCounts?username=hanumesh.kumar@opsmx.io&noOfDays=7
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-7] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-7] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/platformservice/v6/users/hanumesh.kumar@opsmx.io/features/APP", parameters={}
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-8] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-8] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/platformservice/v6/summaryCounts?username=hanumesh.kumar@opsmx.io&noOfDays=7", parameters={masked}
+2024-03-20 13:21:03.646 DEBUG 7 --- [nio-8084-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.OpsmxPlatformController#getPlatformResponse5(String, String, String, String, String, String, String, String, Boolean, String, Integer, String)
+2024-03-20 13:21:03.647  INFO 7 --- [nio-8084-exec-6] c.n.s.g.s.internal.OpsmxOesService       : <--- HTTP 200 http://oes-sapor:8085/oes/accountsConfig/v5/spinnaker (3ms)
+2024-03-20 13:21:03.647 DEBUG 7 --- [nio-8084-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.netflix.spinnaker.gate.controllers.OpsmxPlatformController#getPlatformResponse1(String, String, String, String, String, String, String, String, Integer, Integer, String, String, Integer, String, Integer, String, List)
+2024-03-20 13:21:03.648 DEBUG 7 --- [nio-8084-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:03.648 DEBUG 7 --- [nio-8084-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2024-03-20 13:21:03.649 DEBUG 7 --- [nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:03.649  INFO 7 --- [nio-8084-exec-7] c.n.s.g.s.internal.OpsmxPlatformService  : ---> HTTP GET http://oes-platform:8095/platformservice/v6/users/hanumesh.kumar%40opsmx.io/features/APP
+2024-03-20 13:21:03.649  INFO 7 --- [nio-8084-exec-8] c.n.s.g.s.internal.OpsmxPlatformService  : ---> HTTP GET http://oes-platform:8095/platformservice/v6/summaryCounts?username=hanumesh.kumar%40opsmx.io&noOfDays=7
+2024-03-20 13:21:03.651 DEBUG 7 --- [nio-8084-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:03.652  INFO 7 --- [nio-8084-exec-7] c.n.s.g.s.internal.OpsmxPlatformService  : <--- HTTP 200 http://oes-platform:8095/platformservice/v6/users/hanumesh.kumar%40opsmx.io/features/APP (3ms)
+2024-03-20 13:21:03.653 DEBUG 7 --- [nio-8084-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:03.653 DEBUG 7 --- [nio-8084-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{isEnabled=true}]
+2024-03-20 13:21:03.653 DEBUG 7 --- [nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:03.655 DEBUG 7 --- [nio-8084-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:03.660  INFO 7 --- [nio-8084-exec-8] c.n.s.g.s.internal.OpsmxPlatformService  : <--- HTTP 200 http://oes-platform:8095/platformservice/v6/summaryCounts?username=hanumesh.kumar%40opsmx.io&noOfDays=7 (11ms)
+2024-03-20 13:21:03.661 DEBUG 7 --- [nio-8084-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;charset=UTF-8', given [application/json, text/plain, */*] and supported [application/json, application/json;charset=UTF-8, application/x-yaml, application/x-yaml;charset=UTF-8, application/json, application/*+json, application/json, application/*+json, application/cbor]
+2024-03-20 13:21:03.661 DEBUG 7 --- [nio-8084-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{totalApplications=0, deployments=null, pendingApprovals=null, policyViolations=null, verificationFa (truncated)...]
+2024-03-20 13:21:03.661 DEBUG 7 --- [nio-8084-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-20 13:21:03.663 DEBUG 7 --- [nio-8084-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2024-03-20 13:21:03.670 DEBUG 7 --- [TaskExecutor-29] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:21:03.671 DEBUG 7 --- [TaskExecutor-30] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:21:03.673 DEBUG 7 --- [TaskExecutor-31] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.lang.Object]
+2024-03-20 13:21:07.562  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.ClouddriverService    : ---- ERROR http://spin-clouddriver-ro:7002/applications?restricted=false&expand=true
+2024-03-20 13:21:07.562  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.Front50Service        : ---- ERROR http://spin-front50:8080/v2/applications?restricted=false
+2024-03-20 13:21:07.563  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.ClouddriverService    : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy177.getAllApplicationsUnrestricted(Unknown Source)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:331)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:331)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy:329)
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 17 more
+
+2024-03-20 13:21:07.563  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.ClouddriverService    : ---- END ERROR
+2024-03-20 13:21:07.563  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.Front50Service        : java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237)
+	at okhttp3.RealCall.execute(RealCall.java:81)
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41)
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)
+	at com.sun.proxy.$Proxy203.getAllApplicationsUnrestricted(Unknown Source)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:256)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:256)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.call(ApplicationService.groovy)
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy:254)
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88)
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74)
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229)
+	... 17 more
+
+2024-03-20 13:21:07.563  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.Front50Service        : ---- END ERROR
+2024-03-20 13:21:07.563 ERROR 7 --- [pool-3-thread-1] c.n.s.gate.services.ApplicationService   : Falling back to application cache
+
+retrofit.RetrofitError: timeout
+	at retrofit.RetrofitError.networkError(RetrofitError.java:27) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:395) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240) ~[retrofit-1.9.0.jar:na]
+	at com.sun.proxy.$Proxy177.getAllApplicationsUnrestricted(Unknown Source) ~[na:na]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:331) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:331) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever$_call_closure1.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy:329) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$ClouddriverApplicationListRetriever.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41) ~[retrofit1-okhttp3-client-1.1.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) ~[retrofit-1.9.0.jar:na]
+	... 14 common frames omitted
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74) ~[kork-web-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36) ~[kork-web-7.169.1.jar:7.169.1]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	... 17 common frames omitted
+
+2024-03-20 13:21:07.563 ERROR 7 --- [pool-3-thread-2] c.n.s.gate.services.ApplicationService   : Falling back to application cache
+
+retrofit.RetrofitError: timeout
+	at retrofit.RetrofitError.networkError(RetrofitError.java:27) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:395) ~[retrofit-1.9.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240) ~[retrofit-1.9.0.jar:na]
+	at com.sun.proxy.$Proxy203.getAllApplicationsUnrestricted(Unknown Source) ~[na:na]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.doCall(ApplicationService.groovy:256) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1$_closure2.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.allowAnonymous(AuthenticatedRequest.java:137) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.doCall(ApplicationService.groovy:256) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever$_call_closure1.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272) ~[kork-security-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy:254) ~[gate-web.jar:1.0.0]
+	at com.netflix.spinnaker.gate.services.ApplicationService$Front50ApplicationListRetriever.call(ApplicationService.groovy) ~[gate-web.jar:1.0.0]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.java:109) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.java:302) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.java:267) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:237) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.jakewharton.retrofit.Ok3Client.execute(Ok3Client.java:41) ~[retrofit1-okhttp3-client-1.1.0.jar:na]
+	at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) ~[retrofit-1.9.0.jar:na]
+	... 14 common frames omitted
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:416) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:130) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:263) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:183) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at com.netflix.spinnaker.okhttp.MetricsInterceptor.doIntercept(MetricsInterceptor.java:74) ~[kork-web-7.169.1.jar:7.169.1]
+	at com.netflix.spinnaker.okhttp.OkHttp3MetricsInterceptor.intercept(OkHttp3MetricsInterceptor.java:36) ~[kork-web-7.169.1.jar:7.169.1]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	... 17 common frames omitted
+
+2024-03-20 13:21:12.564  INFO 7 --- [pool-3-thread-1] c.n.s.g.s.internal.ClouddriverService    : ---> HTTP GET http://spin-clouddriver-ro:7002/applications?restricted=false&expand=true
+2024-03-20 13:21:12.564  INFO 7 --- [pool-3-thread-2] c.n.s.g.s.internal.Front50Service        : ---> HTTP GET http://spin-front50:8080/v2/applications?restricted=false
