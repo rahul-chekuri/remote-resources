@@ -1,0 +1,537 @@
+Individual Repo:
+
+rahul@opsmx:~/Documents/codebase/temp/j-sandy/kork$ ./gradlew :kork-eureka:dependencies --configuration compileClasspath
+
+> Task :kork-eureka:dependencies
+
+------------------------------------------------------------
+Project ':kork-eureka'
+------------------------------------------------------------
+
+compileClasspath - Compile classpath for compilation 'main' (target  (jvm)).
++--- project :spinnaker-dependencies
+|    +--- org.apache.logging.log4j:log4j-bom:2.20.0
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.20.0 (c)
+|    |    \--- org.apache.logging.log4j:log4j-api:2.20.0 (c)
+|    +--- org.jetbrains.kotlin:kotlin-bom:1.6.21
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.6.21 -> 1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21 -> 1.7.22 (c)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21 -> 1.7.22 (c)
+|    +--- io.zipkin.brave:brave-bom:5.12.3
+|    +--- org.springframework.boot:spring-boot-dependencies:3.0.13
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.22 (c)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-actuator:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-aop:3.0.13 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.22 (c)
+|    |    +--- org.springframework.boot:spring-boot:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.13 (c)
+|    |    +--- io.micrometer:micrometer-observation:1.10.13 (c)
+|    |    +--- io.micrometer:micrometer-core:1.10.13 (c)
+|    |    +--- org.springframework:spring-aop:6.0.14 (c)
+|    |    +--- org.aspectj:aspectjweaver:1.9.20.1 (c)
+|    |    +--- org.glassfish.jersey.core:jersey-client:3.1.3 (c)
+|    |    +--- org.glassfish.jersey.connectors:jersey-apache-connector:3.1.3 (c)
+|    |    +--- org.glassfish.jersey.inject:jersey-hk2:3.1.3 (c)
+|    |    +--- org.slf4j:slf4j-api:2.0.9 (c)
+|    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22 (c)
+|    |    +--- org.springframework:spring-core:6.0.14 (c)
+|    |    +--- org.springframework:spring-context:6.0.14 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.13 (c)
+|    |    +--- org.yaml:snakeyaml:1.33 (c)
+|    |    +--- org.springframework.boot:spring-boot-actuator:3.0.13 (c)
+|    |    +--- io.micrometer:micrometer-commons:1.10.13 (c)
+|    |    +--- org.springframework:spring-beans:6.0.14 (c)
+|    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0 (c)
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3 (c)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.14 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.14.3 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.14.3 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.14.3 (c)
+|    |    +--- org.springframework:spring-jcl:6.0.14 (c)
+|    |    +--- org.springframework:spring-expression:6.0.14 (c)
+|    |    +--- ch.qos.logback:logback-classic:1.4.11 -> 1.4.14 (c)
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.19.0 -> 2.20.0 (c)
+|    |    +--- org.slf4j:jul-to-slf4j:2.0.9 (c)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.16 (c)
+|    |    +--- commons-codec:commons-codec:1.15 (c)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.19.0 -> 2.20.0 (c)
+|    |    \--- ch.qos.logback:logback-core:1.4.11 -> 1.4.14 (c)
+|    +--- com.amazonaws:aws-java-sdk-bom:1.12.261
+|    +--- com.google.protobuf:protobuf-bom:3.25.2
+|    +--- com.google.cloud:libraries-bom:26.34.0
+|    |    \--- com.google.guava:guava:32.1.3-jre -> 33.0.0-jre (c)
+|    +--- software.amazon.awssdk:bom:2.23.7
+|    +--- org.springframework.cloud:spring-cloud-dependencies:2022.0.5
+|    |    +--- com.netflix.eureka:eureka-core-jersey3:2.0.1 (c)
+|    |    +--- com.netflix.eureka:eureka-client-jersey3:2.0.1 (c)
+|    |    +--- io.github.resilience4j:resilience4j-retry:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-annotations:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-spring-boot2:2.0.2 (c)
+|    |    +--- com.netflix.eureka:eureka-core:2.0.1 (c)
+|    |    +--- com.netflix.eureka:eureka-client:2.0.1 (c)
+|    |    +--- io.github.resilience4j:resilience4j-core:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-spring:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-consumer:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-circuitbreaker:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-ratelimiter:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-bulkhead:2.0.2 (c)
+|    |    \--- io.github.resilience4j:resilience4j-timelimiter:2.0.2 (c)
+|    +--- io.strikt:strikt-bom:0.31.0
+|    +--- org.spockframework:spock-bom:2.4-M1-groovy-4.0
+|    +--- com.oracle.oci.sdk:oci-java-sdk-bom:3.21.0
+|    +--- org.testcontainers:testcontainers-bom:1.19.8
+|    +--- io.arrow-kt:arrow-stack:0.13.2
+|    +--- com.netflix.archaius:archaius-core:0.7.7 (c)
+|    +--- com.netflix.netflix-commons:netflix-eventbus:0.3.0 (c)
+|    +--- commons-configuration:commons-configuration:1.8 -> 1.10 (c)
+|    +--- com.netflix.spectator:spectator-api:1.0.6 (c)
+|    +--- com.google.code.findbugs:jsr305:3.0.2 (c)
+|    +--- com.netflix.eureka:eureka-client:1.10.17 -> 2.0.1 (c)
+|    +--- org.pf4j:pf4j:3.10.0 (c)
+|    +--- org.jetbrains:annotations:19.0.0 (c)
+|    +--- ch.qos.logback:logback-classic:1.4.14 (c)
+|    +--- com.google.guava:guava:33.0.0-jre (c)
+|    \--- ch.qos.logback:logback-core:1.4.14 (c)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22
+|    |    \--- org.jetbrains:annotations:13.0 -> 19.0.0
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.22
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22 (*)
++--- project :kork-core
+|    +--- project :spinnaker-dependencies (*)
+|    +--- project :kork-api
+|    |    +--- project :spinnaker-dependencies (*)
+|    |    \--- project :kork-plugins-api
+|    |         +--- project :spinnaker-dependencies (*)
+|    |         +--- org.slf4j:slf4j-api -> 2.0.9
+|    |         +--- jakarta.annotation:jakarta.annotation-api -> 2.1.1
+|    |         +--- project :kork-annotations
+|    |         |    +--- project :spinnaker-dependencies (*)
+|    |         |    \--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    |         +--- org.pf4j:pf4j -> 3.10.0
+|    |         |    +--- org.slf4j:slf4j-api:2.0.6 -> 2.0.9
+|    |         |    \--- com.github.zafarkhaja:java-semver:0.9.0
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22 (*)
+|    +--- project :kork-annotations (*)
+|    +--- project :kork-exceptions
+|    |    +--- project :spinnaker-dependencies (*)
+|    |    \--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    +--- org.springframework.boot:spring-boot-autoconfigure -> 3.0.13
+|    |    \--- org.springframework.boot:spring-boot:3.0.13
+|    |         +--- org.springframework:spring-core:6.0.14
+|    |         |    \--- org.springframework:spring-jcl:6.0.14
+|    |         \--- org.springframework:spring-context:6.0.14
+|    |              +--- org.springframework:spring-aop:6.0.14
+|    |              |    +--- org.springframework:spring-beans:6.0.14
+|    |              |    |    \--- org.springframework:spring-core:6.0.14 (*)
+|    |              |    \--- org.springframework:spring-core:6.0.14 (*)
+|    |              +--- org.springframework:spring-beans:6.0.14 (*)
+|    |              +--- org.springframework:spring-core:6.0.14 (*)
+|    |              \--- org.springframework:spring-expression:6.0.14
+|    |                   \--- org.springframework:spring-core:6.0.14 (*)
+|    +--- org.springframework.boot:spring-boot-starter-aop -> 3.0.13
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13
+|    |    |    +--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.13
+|    |    |    |    +--- ch.qos.logback:logback-classic:1.4.11 -> 1.4.14
+|    |    |    |    |    +--- ch.qos.logback:logback-core:1.4.14
+|    |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7 -> 2.0.9
+|    |    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.19.0 -> 2.20.0
+|    |    |    |    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    |    |    |    \--- org.slf4j:slf4j-api:1.7.36 -> 2.0.9
+|    |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.9
+|    |    |    |         \--- org.slf4j:slf4j-api:2.0.9
+|    |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    |    +--- org.springframework:spring-core:6.0.14 (*)
+|    |    |    \--- org.yaml:snakeyaml:1.33
+|    |    +--- org.springframework:spring-aop:6.0.14 (*)
+|    |    \--- org.aspectj:aspectjweaver:1.9.20.1
+|    +--- org.springframework.boot:spring-boot-starter-actuator -> 3.0.13
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13 (*)
+|    |    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.13
+|    |    |    +--- org.springframework.boot:spring-boot-actuator:3.0.13
+|    |    |    |    \--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (*)
+|    |    +--- io.micrometer:micrometer-observation:1.10.13
+|    |    |    \--- io.micrometer:micrometer-commons:1.10.13
+|    |    \--- io.micrometer:micrometer-core:1.10.13
+|    |         +--- io.micrometer:micrometer-commons:1.10.13
+|    |         \--- io.micrometer:micrometer-observation:1.10.13 (*)
+|    +--- com.netflix.spectator:spectator-api -> 1.0.6
+|    +--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    +--- io.github.resilience4j:resilience4j-annotations -> 2.0.2
+|    +--- io.github.resilience4j:resilience4j-retry -> 2.0.2
+|    |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|    \--- io.github.resilience4j:resilience4j-spring-boot2 -> 2.0.2
+|         \--- io.github.resilience4j:resilience4j-spring:2.0.2
+|              +--- io.github.resilience4j:resilience4j-annotations:2.0.2
+|              +--- io.github.resilience4j:resilience4j-consumer:2.0.2
+|              \--- io.github.resilience4j:resilience4j-framework-common:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-circuitbreaker:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-ratelimiter:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-retry:2.0.2 (*)
+|                   +--- io.github.resilience4j:resilience4j-bulkhead:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   \--- io.github.resilience4j:resilience4j-timelimiter:2.0.2
+|                        \--- io.github.resilience4j:resilience4j-core:2.0.2
++--- project :kork-exceptions (*)
++--- jakarta.inject:jakarta.inject-api -> 2.0.1
++--- org.springframework.boot:spring-boot-autoconfigure -> 3.0.13 (*)
++--- org.springframework.boot:spring-boot-starter-actuator -> 3.0.13 (*)
++--- com.netflix.archaius:archaius-core -> 0.7.7
++--- commons-configuration:commons-configuration -> 1.10
+|    +--- commons-lang:commons-lang:2.6
+|    \--- commons-logging:commons-logging:1.1.1
++--- com.netflix.eureka:eureka-client-jersey3 -> 2.0.1
+|    +--- com.netflix.eureka:eureka-client:2.0.1
+|    |    +--- com.netflix.netflix-commons:netflix-eventbus:0.3.0
+|    |    +--- com.thoughtworks.xstream:xstream:1.4.19
+|    |    |    \--- io.github.x-stream:mxparser:1.2.2
+|    |    |         \--- xmlpull:xmlpull:1.1.3.1
+|    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.0.0 -> 3.1.0
+|    |    +--- jakarta.inject:jakarta.inject-api:2.0.1
+|    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.0 -> 2.1.1
+|    |    +--- com.netflix.servo:servo-core:0.12.21
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 2.0.9
+|    |    |    \--- com.google.guava:guava:19.0 -> 33.0.0-jre
+|    |    |         +--- com.google.guava:failureaccess:1.0.2
+|    |    |         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    |         +--- org.checkerframework:checker-qual:3.41.0
+|    |    |         +--- com.google.errorprone:error_prone_annotations:2.23.0
+|    |    |         \--- com.google.j2objc:j2objc-annotations:2.8
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.3 -> 4.5.14
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.16
+|    |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+|    |    +--- commons-configuration:commons-configuration:1.10 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.5 -> 2.14.3
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.14.3
+|    |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.14.3 (c)
+|    |    |         +--- com.fasterxml.jackson.core:jackson-core:2.14.3 (c)
+|    |    |         \--- com.fasterxml.jackson.core:jackson-databind:2.14.3 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.5 -> 2.14.3
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.14.3 (*)
+|    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.5.1 -> 2.14.3
+|    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.14.3 (*)
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.14.3 (*)
+|    |         \--- com.fasterxml.jackson:jackson-bom:2.14.3 (*)
+|    +--- org.glassfish.jersey.core:jersey-client:3.0.5 -> 3.1.3
+|    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3
+|    |    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+|    |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    |    +--- jakarta.inject:jakarta.inject-api:2.0.1
+|    |    |    \--- org.glassfish.hk2:osgi-resource-locator:1.0.3
+|    |    \--- jakarta.inject:jakarta.inject-api:2.0.1
+|    +--- org.glassfish.jersey.inject:jersey-hk2:3.0.5 -> 3.1.3
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3 (*)
+|    |    +--- org.glassfish.hk2:hk2-locator:3.0.4
+|    |    |    +--- org.glassfish.hk2.external:aopalliance-repackaged:3.0.4
+|    |    |    +--- org.glassfish.hk2:hk2-api:3.0.4
+|    |    |    |    +--- org.glassfish.hk2:hk2-utils:3.0.4
+|    |    |    |    \--- org.glassfish.hk2.external:aopalliance-repackaged:3.0.4
+|    |    |    \--- org.glassfish.hk2:hk2-utils:3.0.4
+|    |    \--- org.javassist:javassist:3.29.2-GA
+|    \--- org.glassfish.jersey.connectors:jersey-apache-connector:3.0.5 -> 3.1.3
+|         +--- org.apache.httpcomponents:httpclient:4.5.14 (*)
+|         +--- org.glassfish.jersey.core:jersey-common:3.1.3 (*)
+|         +--- org.glassfish.jersey.core:jersey-client:3.1.3 (*)
+|         \--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
++--- com.netflix.eureka:eureka-core-jersey3 -> 2.0.1
+|    +--- com.netflix.eureka:eureka-core:2.0.1
+|    |    +--- com.netflix.eureka:eureka-client:2.0.1 (*)
+|    |    +--- jakarta.inject:jakarta.inject-api:2.0.1
+|    |    +--- com.thoughtworks.xstream:xstream:1.4.19 (*)
+|    |    \--- com.fasterxml.woodstox:woodstox-core:6.2.1
+|    |         \--- org.codehaus.woodstox:stax2-api:4.2.1
+|    +--- com.netflix.eureka:eureka-client-jersey3:2.0.1 (*)
+|    +--- org.glassfish.jersey.core:jersey-client:3.0.5 -> 3.1.3 (*)
+|    \--- org.glassfish.jersey.connectors:jersey-apache-connector:3.0.5 -> 3.1.3 (*)
+\--- com.netflix.netflix-commons:netflix-eventbus -> 0.3.0
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
+
+
+
+
+
+
+
+
+
+Mono Repo:
+
+rahul@opsmx:~/Documents/codebase/spinnaker/spinnaker$ ./gradlew :kork:kork-eureka:dependencies --configuration compileClasspath
+
+> Task :kork:kork-eureka:dependencies
+
+------------------------------------------------------------
+Project ':kork:kork-eureka'
+------------------------------------------------------------
+
+compileClasspath - Compile classpath for compilation 'main' (target  (jvm)).
++--- project :kork:spinnaker-dependencies
+|    +--- org.apache.logging.log4j:log4j-bom:2.20.0
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.20.0 (c)
+|    |    \--- org.apache.logging.log4j:log4j-api:2.20.0 (c)
+|    +--- com.fasterxml.jackson:jackson-bom:2.14.0
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.14.0 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.14.0 (c)
+|    |    \--- com.fasterxml.jackson.core:jackson-databind:2.14.0 (c)
+|    +--- org.jetbrains.kotlin:kotlin-bom:1.6.21
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.6.21 -> 1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21 -> 1.7.22 (c)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21 -> 1.7.22 (c)
+|    +--- io.zipkin.brave:brave-bom:5.12.3
+|    +--- org.springframework.boot:spring-boot-dependencies:3.0.13
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.22 (c)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-actuator:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-aop:3.0.13 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.22 (c)
+|    |    +--- org.springframework.boot:spring-boot:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13 (c)
+|    |    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.13 (c)
+|    |    +--- io.micrometer:micrometer-observation:1.10.13 (c)
+|    |    +--- io.micrometer:micrometer-core:1.10.13 (c)
+|    |    +--- org.springframework:spring-aop:6.0.14 (c)
+|    |    +--- org.aspectj:aspectjweaver:1.9.20.1 (c)
+|    |    +--- org.glassfish.jersey.core:jersey-client:3.1.3 (c)
+|    |    +--- org.glassfish.jersey.connectors:jersey-apache-connector:3.1.3 (c)
+|    |    +--- org.glassfish.jersey.inject:jersey-hk2:3.1.3 (c)
+|    |    +--- org.slf4j:slf4j-api:2.0.9 (c)
+|    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1 (c)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22 (c)
+|    |    +--- org.springframework:spring-core:6.0.14 (c)
+|    |    +--- org.springframework:spring-context:6.0.14 (c)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.13 (c)
+|    |    +--- org.yaml:snakeyaml:1.33 (c)
+|    |    +--- org.springframework.boot:spring-boot-actuator:3.0.13 (c)
+|    |    +--- io.micrometer:micrometer-commons:1.10.13 (c)
+|    |    +--- org.springframework:spring-beans:6.0.14 (c)
+|    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0 (c)
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3 (c)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.14 (c)
+|    |    +--- org.springframework:spring-jcl:6.0.14 (c)
+|    |    +--- org.springframework:spring-expression:6.0.14 (c)
+|    |    +--- ch.qos.logback:logback-classic:1.4.11 -> 1.4.14 (c)
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.19.0 -> 2.20.0 (c)
+|    |    +--- org.slf4j:jul-to-slf4j:2.0.9 (c)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.16 (c)
+|    |    +--- commons-codec:commons-codec:1.15 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.14.3 -> 2.14.0 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.14.3 -> 2.14.0 (c)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.14.3 -> 2.14.0 (c)
+|    |    +--- ch.qos.logback:logback-core:1.4.11 -> 1.4.14 (c)
+|    |    \--- org.apache.logging.log4j:log4j-api:2.19.0 -> 2.20.0 (c)
+|    +--- com.amazonaws:aws-java-sdk-bom:1.12.261
+|    +--- com.google.protobuf:protobuf-bom:3.25.2
+|    +--- com.google.cloud:libraries-bom:26.34.0
+|    |    \--- com.google.guava:guava:32.1.3-jre -> 33.0.0-jre (c)
+|    +--- software.amazon.awssdk:bom:2.23.7
+|    +--- org.springframework.cloud:spring-cloud-dependencies:2022.0.5
+|    |    +--- com.netflix.eureka:eureka-core-jersey3:2.0.1 (c)
+|    |    +--- com.netflix.eureka:eureka-client-jersey3:2.0.1 (c)
+|    |    +--- io.github.resilience4j:resilience4j-retry:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-annotations:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-spring-boot2:2.0.2 (c)
+|    |    +--- com.netflix.eureka:eureka-core:2.0.1 (c)
+|    |    +--- com.netflix.eureka:eureka-client:2.0.1 -> 1.10.17 (c)
+|    |    +--- io.github.resilience4j:resilience4j-core:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-spring:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-consumer:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-circuitbreaker:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-ratelimiter:2.0.2 (c)
+|    |    +--- io.github.resilience4j:resilience4j-bulkhead:2.0.2 (c)
+|    |    \--- io.github.resilience4j:resilience4j-timelimiter:2.0.2 (c)
+|    +--- io.strikt:strikt-bom:0.31.0
+|    +--- org.spockframework:spock-bom:2.4-M1-groovy-4.0
+|    +--- com.oracle.oci.sdk:oci-java-sdk-bom:3.21.0
+|    +--- org.testcontainers:testcontainers-bom:1.19.8
+|    +--- io.arrow-kt:arrow-stack:0.13.2
+|    +--- com.netflix.archaius:archaius-core:0.7.7 (c)
+|    +--- com.netflix.netflix-commons:netflix-eventbus:0.3.0 (c)
+|    +--- commons-configuration:commons-configuration:1.8 (c)
+|    +--- com.netflix.spectator:spectator-api:1.0.6 (c)
+|    +--- com.google.code.findbugs:jsr305:3.0.2 (c)
+|    +--- com.netflix.eureka:eureka-client:1.10.17 (c)
+|    +--- org.pf4j:pf4j:3.10.0 (c)
+|    +--- org.jetbrains:annotations:19.0.0 (c)
+|    +--- ch.qos.logback:logback-classic:1.4.14 (c)
+|    +--- ch.qos.logback:logback-core:1.4.14 (c)
+|    \--- com.google.guava:guava:33.0.0-jre (c)
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22
+|    |    \--- org.jetbrains:annotations:13.0 -> 19.0.0
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.22
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.7.22 (*)
++--- project :kork:kork-core
+|    +--- project :kork:spinnaker-dependencies (*)
+|    +--- project :kork:kork-api
+|    |    +--- project :kork:spinnaker-dependencies (*)
+|    |    \--- project :kork:kork-plugins-api
+|    |         +--- project :kork:spinnaker-dependencies (*)
+|    |         +--- org.slf4j:slf4j-api -> 2.0.9
+|    |         +--- jakarta.annotation:jakarta.annotation-api -> 2.1.1
+|    |         +--- project :kork:kork-annotations
+|    |         |    +--- project :kork:spinnaker-dependencies (*)
+|    |         |    \--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    |         +--- org.pf4j:pf4j -> 3.10.0
+|    |         |    +--- org.slf4j:slf4j-api:2.0.6 -> 2.0.9
+|    |         |    \--- com.github.zafarkhaja:java-semver:0.9.0
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21 -> 1.7.22 (*)
+|    +--- project :kork:kork-annotations (*)
+|    +--- project :kork:kork-exceptions
+|    |    +--- project :kork:spinnaker-dependencies (*)
+|    |    \--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    +--- org.springframework.boot:spring-boot-autoconfigure -> 3.0.13
+|    |    \--- org.springframework.boot:spring-boot:3.0.13
+|    |         +--- org.springframework:spring-core:6.0.14
+|    |         |    \--- org.springframework:spring-jcl:6.0.14
+|    |         \--- org.springframework:spring-context:6.0.14
+|    |              +--- org.springframework:spring-aop:6.0.14
+|    |              |    +--- org.springframework:spring-beans:6.0.14
+|    |              |    |    \--- org.springframework:spring-core:6.0.14 (*)
+|    |              |    \--- org.springframework:spring-core:6.0.14 (*)
+|    |              +--- org.springframework:spring-beans:6.0.14 (*)
+|    |              +--- org.springframework:spring-core:6.0.14 (*)
+|    |              \--- org.springframework:spring-expression:6.0.14
+|    |                   \--- org.springframework:spring-core:6.0.14 (*)
+|    +--- org.springframework.boot:spring-boot-starter-aop -> 3.0.13
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13
+|    |    |    +--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.13
+|    |    |    |    +--- ch.qos.logback:logback-classic:1.4.11 -> 1.4.14
+|    |    |    |    |    +--- ch.qos.logback:logback-core:1.4.14
+|    |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7 -> 2.0.9
+|    |    |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.19.0 -> 2.20.0
+|    |    |    |    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    |    |    |    \--- org.slf4j:slf4j-api:1.7.36 -> 2.0.9
+|    |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.9
+|    |    |    |         \--- org.slf4j:slf4j-api:2.0.9
+|    |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    |    +--- org.springframework:spring-core:6.0.14 (*)
+|    |    |    \--- org.yaml:snakeyaml:1.33
+|    |    +--- org.springframework:spring-aop:6.0.14 (*)
+|    |    \--- org.aspectj:aspectjweaver:1.9.20.1
+|    +--- org.springframework.boot:spring-boot-starter-actuator -> 3.0.13
+|    |    +--- org.springframework.boot:spring-boot-starter:3.0.13 (*)
+|    |    +--- org.springframework.boot:spring-boot-actuator-autoconfigure:3.0.13
+|    |    |    +--- org.springframework.boot:spring-boot-actuator:3.0.13
+|    |    |    |    \--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    +--- org.springframework.boot:spring-boot:3.0.13 (*)
+|    |    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.0.13 (*)
+|    |    +--- io.micrometer:micrometer-observation:1.10.13
+|    |    |    \--- io.micrometer:micrometer-commons:1.10.13
+|    |    \--- io.micrometer:micrometer-core:1.10.13
+|    |         +--- io.micrometer:micrometer-commons:1.10.13
+|    |         \--- io.micrometer:micrometer-observation:1.10.13 (*)
+|    +--- com.netflix.spectator:spectator-api -> 1.0.6
+|    +--- com.google.code.findbugs:jsr305 -> 3.0.2
+|    +--- io.github.resilience4j:resilience4j-annotations -> 2.0.2
+|    +--- io.github.resilience4j:resilience4j-retry -> 2.0.2
+|    |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|    \--- io.github.resilience4j:resilience4j-spring-boot2 -> 2.0.2
+|         \--- io.github.resilience4j:resilience4j-spring:2.0.2
+|              +--- io.github.resilience4j:resilience4j-annotations:2.0.2
+|              +--- io.github.resilience4j:resilience4j-consumer:2.0.2
+|              \--- io.github.resilience4j:resilience4j-framework-common:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-circuitbreaker:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-ratelimiter:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   +--- io.github.resilience4j:resilience4j-retry:2.0.2 (*)
+|                   +--- io.github.resilience4j:resilience4j-bulkhead:2.0.2
+|                   |    \--- io.github.resilience4j:resilience4j-core:2.0.2
+|                   \--- io.github.resilience4j:resilience4j-timelimiter:2.0.2
+|                        \--- io.github.resilience4j:resilience4j-core:2.0.2
++--- project :kork:kork-exceptions (*)
++--- jakarta.inject:jakarta.inject-api -> 2.0.1
++--- org.springframework.boot:spring-boot-autoconfigure -> 3.0.13 (*)
++--- org.springframework.boot:spring-boot-starter-actuator -> 3.0.13 (*)
++--- com.netflix.archaius:archaius-core -> 0.7.7
++--- commons-configuration:commons-configuration -> 1.8
+|    +--- commons-lang:commons-lang:2.6
+|    \--- commons-logging:commons-logging:1.1.1
++--- com.netflix.eureka:eureka-client-jersey3 -> 2.0.1
+|    +--- com.netflix.eureka:eureka-client:2.0.1 -> 1.10.17
+|    |    +--- com.netflix.netflix-commons:netflix-eventbus:0.3.0
+|    |    +--- com.thoughtworks.xstream:xstream:1.4.18 -> 1.4.19
+|    |    |    \--- io.github.x-stream:mxparser:1.2.2
+|    |    |         \--- xmlpull:xmlpull:1.1.3.1
+|    |    +--- com.netflix.servo:servo-core:0.12.21
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 2.0.9
+|    |    |    \--- com.google.guava:guava:19.0 -> 33.0.0-jre
+|    |    |         +--- com.google.guava:failureaccess:1.0.2
+|    |    |         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    |         +--- org.checkerframework:checker-qual:3.41.0
+|    |    |         +--- com.google.errorprone:error_prone_annotations:2.23.0
+|    |    |         \--- com.google.j2objc:j2objc-annotations:2.8
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.3 -> 4.5.14
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.16
+|    |    |    \--- commons-codec:commons-codec:1.11 -> 1.15
+|    |    +--- commons-configuration:commons-configuration:1.10 -> 1.8 (*)
+|    |    +--- com.google.inject:guice:4.1.0
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- aopalliance:aopalliance:1.0
+|    |    |    \--- com.google.guava:guava:19.0 -> 33.0.0-jre (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.5 -> 2.14.0
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.14.0 (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.5 -> 2.14.0
+|    |    |    \--- com.fasterxml.jackson:jackson-bom:2.14.0 (*)
+|    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.5.1 -> 2.14.0
+|    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.14.0 (*)
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.14.0 (*)
+|    |         \--- com.fasterxml.jackson:jackson-bom:2.14.0 (*)
+|    +--- org.glassfish.jersey.core:jersey-client:3.0.5 -> 3.1.3
+|    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3
+|    |    |    +--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+|    |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
+|    |    |    +--- jakarta.inject:jakarta.inject-api:2.0.1
+|    |    |    \--- org.glassfish.hk2:osgi-resource-locator:1.0.3
+|    |    \--- jakarta.inject:jakarta.inject-api:2.0.1
+|    +--- org.glassfish.jersey.inject:jersey-hk2:3.0.5 -> 3.1.3
+|    |    +--- org.glassfish.jersey.core:jersey-common:3.1.3 (*)
+|    |    +--- org.glassfish.hk2:hk2-locator:3.0.4
+|    |    |    +--- org.glassfish.hk2.external:aopalliance-repackaged:3.0.4
+|    |    |    +--- org.glassfish.hk2:hk2-api:3.0.4
+|    |    |    |    +--- org.glassfish.hk2:hk2-utils:3.0.4
+|    |    |    |    \--- org.glassfish.hk2.external:aopalliance-repackaged:3.0.4
+|    |    |    \--- org.glassfish.hk2:hk2-utils:3.0.4
+|    |    \--- org.javassist:javassist:3.29.2-GA
+|    \--- org.glassfish.jersey.connectors:jersey-apache-connector:3.0.5 -> 3.1.3
+|         +--- org.apache.httpcomponents:httpclient:4.5.14 (*)
+|         +--- org.glassfish.jersey.core:jersey-common:3.1.3 (*)
+|         +--- org.glassfish.jersey.core:jersey-client:3.1.3 (*)
+|         \--- jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
++--- com.netflix.eureka:eureka-core-jersey3 -> 2.0.1
+|    +--- com.netflix.eureka:eureka-core:2.0.1
+|    |    +--- com.netflix.eureka:eureka-client:2.0.1 -> 1.10.17 (*)
+|    |    +--- jakarta.inject:jakarta.inject-api:2.0.1
+|    |    +--- com.thoughtworks.xstream:xstream:1.4.19 (*)
+|    |    \--- com.fasterxml.woodstox:woodstox-core:6.2.1
+|    |         \--- org.codehaus.woodstox:stax2-api:4.2.1
+|    +--- com.netflix.eureka:eureka-client-jersey3:2.0.1 (*)
+|    +--- org.glassfish.jersey.core:jersey-client:3.0.5 -> 3.1.3 (*)
+|    \--- org.glassfish.jersey.connectors:jersey-apache-connector:3.0.5 -> 3.1.3 (*)
+\--- com.netflix.netflix-commons:netflix-eventbus -> 0.3.0
+
+(c) - dependency constraint
+(*) - dependencies omitted (listed previously)
+
